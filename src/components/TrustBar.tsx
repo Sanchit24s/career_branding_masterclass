@@ -4,8 +4,8 @@ import companiesImage from '../assets/images/companies.webp';
 
 const TrustBar: React.FC = () => {
   return (
-    <div className="bg-white py-24 border-y border-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="bg-white py-12 sm:py-16 md:py-24 border-y border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Companies Image */}
         <div className="flex justify-center reveal">

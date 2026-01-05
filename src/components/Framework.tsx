@@ -32,33 +32,33 @@ const Framework: React.FC = () => {
   ];
 
   return (
-    <section id="framework" className="py-32 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <section id="framework" className="py-16 sm:py-24 md:py-32 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
           {/* Left Section - Introduction */}
           <div className="reveal relative">
             {/* Orange gradient wave background */}
-            <div 
+            <div
               className="absolute inset-0 -z-10 opacity-30"
               style={{
                 background: 'linear-gradient(135deg, rgba(255, 154, 128, 0.1) 0%, rgba(255, 209, 193, 0.15) 100%)',
                 clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)'
               }}
             ></div>
-            
+
             <div className="relative z-10">
               <span className="text-accent font-bold uppercase tracking-widest text-xs md:text-sm">
                 EXCLUSIVE METHODOLOGY
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-8 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 sm:mb-8 leading-tight">
                 <span className="text-charcoal">The 5 Capitals</span>{' '}
                 <span className="text-accent">Framework</span>
               </h2>
-              <p className="text-lg md:text-xl text-body mb-8 leading-relaxed">
-                Most career advice focuses on 1 Capital: Intellectual (learning skills). 
+              <p className="text-base sm:text-lg md:text-xl text-body mb-6 sm:mb-8 leading-relaxed">
+                Most career advice focuses on 1 Capital: Intellectual (learning skills).
                 The top 1% focuses on the 4 other Capitals that actually drive income.
               </p>
-              
+
               <div className="space-y-4 mb-12">
                 <div className="flex items-center gap-3 text-charcoal font-semibold">
                   <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0"></div>
@@ -73,9 +73,9 @@ const Framework: React.FC = () => {
                   <span>Zero fluff, all actionable strategy</span>
                 </div>
               </div>
-              
-              <a 
-                href="#cta" 
+
+              <a
+                href="#cta"
                 className="inline-flex items-center gap-2 text-accent font-bold text-lg hover:gap-4 transition-all group"
               >
                 Learn how to apply this{' '}
@@ -87,27 +87,27 @@ const Framework: React.FC = () => {
           {/* Right Section - 5 Capitals Cards */}
           <div className="space-y-4">
             {capitals.map((item, idx) => (
-              <div 
-                key={idx} 
-                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-gray-100 reveal group"
-                style={{ transitionDelay: `${idx * 100}ms` }}
+              <div
+                key={idx}
+                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 reveal group"
+                data-reveal-delay={idx * 200}
               >
-                <div className="flex gap-4 p-5 md:p-6">
+                <div className="flex gap-3 sm:gap-4 p-4 sm:p-5 md:p-6">
                   {/* Image */}
-                  <div className="flex-shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden bg-gray-100">
-                    <img 
-                      src={item.image} 
+                  <div className="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-lg sm:rounded-xl overflow-hidden bg-gray-100">
+                    <img
+                      src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  
+
                   {/* Content */}
                   <div className="flex-1 flex flex-col justify-center">
-                    <h3 className="text-lg md:text-xl font-bold text-charcoal mb-2">
+                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-charcoal mb-1 sm:mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-sm md:text-base text-body leading-relaxed">
+                    <p className="text-xs sm:text-sm md:text-base text-body leading-relaxed">
                       {item.desc}
                     </p>
                   </div>

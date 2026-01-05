@@ -45,8 +45,8 @@ export const AnimatedTestimonials = ({
 
   return (
     <div className={cn("relative", className)}>
-      {/* Content Section - Fixed height container to prevent resizing */}
-      <div className="relative min-h-[400px] flex flex-col">
+      {/* Content Section - Responsive height container */}
+      <div className="relative min-h-[350px] sm:min-h-[400px] flex flex-col pb-16 sm:pb-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={active}
@@ -66,11 +66,11 @@ export const AnimatedTestimonials = ({
               duration: 0.3,
               ease: "easeInOut",
             }}
-            className="absolute inset-0 flex flex-col"
+            className="flex flex-col"
           >
-            {/* Quote - Fixed height area */}
-            <div className="min-h-[180px] flex items-start mb-8">
-              <p className="text-3xl font-serif italic text-charcoal leading-relaxed">
+            {/* Quote - Flexible height area */}
+            <div className="flex-1 flex items-start mb-6 sm:mb-8 min-h-[120px] sm:min-h-[180px]">
+              <p className="text-xl sm:text-2xl md:text-3xl font-serif italic text-charcoal leading-relaxed">
                 "{testimonials[active].quote.split(" ").map((word, index) => (
                   <motion.span
                     key={index}
@@ -97,32 +97,32 @@ export const AnimatedTestimonials = ({
               </p>
             </div>
 
-            {/* Author - Fixed position */}
-            <div className="flex items-center gap-4 border-t border-charcoal/5 pt-8 h-[80px]">
+            {/* Author - Flexible position */}
+            <div className="flex items-center gap-3 sm:gap-4 border-t border-charcoal/5 pt-6 sm:pt-8 min-h-[70px] sm:min-h-[80px]">
               <motion.img
                 src={testimonials[active].src}
-                className="w-14 h-14 rounded-full border-2 border-accent object-cover flex-shrink-0"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-accent object-cover flex-shrink-0"
                 alt={testimonials[active].name}
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
               />
-              <div className="min-w-0">
-                <p className="text-charcoal font-bold text-lg truncate">{testimonials[active].name}</p>
-                <p className="text-charcoal/60 text-sm truncate">{testimonials[active].designation}</p>
+              <div className="min-w-0 flex-1">
+                <p className="text-charcoal font-bold text-base sm:text-lg truncate">{testimonials[active].name}</p>
+                <p className="text-charcoal/60 text-xs sm:text-sm truncate">{testimonials[active].designation}</p>
               </div>
             </div>
 
-            {/* Result badge - Fixed position */}
-            <div className="h-[60px] flex items-start pt-4">
+            {/* Result badge - Flexible position */}
+            <div className="flex items-start pt-4 sm:pt-4 min-h-[50px] sm:min-h-[60px]">
               {testimonials[active].result ? (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.4 }}
-                  className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-lg"
+                  className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-accent/10 border border-accent/30 rounded-lg"
                 >
-                  <span className="text-accent font-bold text-sm">{testimonials[active].result}</span>
+                  <span className="text-accent font-bold text-xs sm:text-sm">{testimonials[active].result}</span>
                 </motion.div>
               ) : (
                 <div className="h-[36px]"></div>
@@ -131,21 +131,21 @@ export const AnimatedTestimonials = ({
           </motion.div>
         </AnimatePresence>
 
-        {/* Navigation buttons - Fixed at bottom-right */}
+        {/* Navigation buttons - Responsive positioning */}
         <div className="absolute bottom-0 right-0 flex gap-2 z-20">
           <button
             onClick={handlePrev}
-            className="h-10 w-10 rounded-full bg-charcoal/5 hover:bg-charcoal/10 flex items-center justify-center group/button transition-colors"
+            className="h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-charcoal/5 hover:bg-charcoal/10 flex items-center justify-center group/button transition-colors"
             aria-label="Previous testimonial"
           >
-            <ChevronLeft className="h-5 w-5 text-charcoal group-hover/button:translate-x-[-2px] transition-transform duration-300" />
+            <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 text-charcoal group-hover/button:translate-x-[-2px] transition-transform duration-300" />
           </button>
           <button
             onClick={handleNext}
-            className="h-10 w-10 rounded-full bg-charcoal/5 hover:bg-charcoal/10 flex items-center justify-center group/button transition-colors"
+            className="h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-charcoal/5 hover:bg-charcoal/10 flex items-center justify-center group/button transition-colors"
             aria-label="Next testimonial"
           >
-            <ChevronRight className="h-5 w-5 text-charcoal group-hover/button:translate-x-[2px] transition-transform duration-300" />
+            <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-charcoal group-hover/button:translate-x-[2px] transition-transform duration-300" />
           </button>
         </div>
       </div>

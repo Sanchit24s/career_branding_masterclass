@@ -41,16 +41,16 @@ const PainPoints: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-[#F8F8F8]">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="py-16 sm:py-24 md:py-32 bg-[#F8F8F8]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
         {/* Left Side - The Realization */}
         <div className="reveal">
           <span className="text-accent font-bold uppercase tracking-widest text-sm">The Invisible Barrier</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-charcoal mt-4 mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mt-4 mb-6 sm:mb-8 leading-tight">
             Does your paycheck reflect <br />
             <span className="text-accent underline decoration-accent/20">your true value?</span>
           </h2>
-          <p className="text-lg text-body mb-12 leading-relaxed">
+          <p className="text-base sm:text-lg text-body mb-8 sm:mb-12 leading-relaxed">
             Most professionals are trapped in the "Performance Paradox." They work harder, expecting visibility to follow. It doesn't.
           </p>
 
@@ -68,10 +68,10 @@ const PainPoints: React.FC = () => {
         {/* Right Side - The Proof with Animated Testimonials */}
         <div className="relative reveal">
           {/* Soft gradient background shape - matching Transformation section style */}
-          <div className="absolute -bottom-10 -right-10 w-full h-full bg-primary-gradient rounded-[2.5rem] -z-10 rotate-3"></div>
+          <div className="absolute -bottom-10 -right-10 w-full h-full bg-primary-gradient rounded-[2.5rem] -z-10 rotate-3 overflow-hidden"></div>
 
           {/* Premium testimonial card - matching site's card style */}
-          <div className="bg-white p-12 rounded-[2.5rem] relative z-10 shadow-2xl">
+          <div className="bg-white p-6 sm:p-8 md:p-12 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] relative z-10 shadow-2xl">
             <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
           </div>
         </div>

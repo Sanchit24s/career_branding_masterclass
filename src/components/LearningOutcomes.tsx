@@ -31,16 +31,16 @@ const LearningOutcomes: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-[#F8F8F8]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal">
+    <section className="py-16 sm:py-24 md:py-32 bg-[#F8F8F8]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 sm:mb-16 md:mb-20 gap-6 sm:gap-8 reveal">
           <div className="max-w-2xl">
-            <span className="text-accent font-bold uppercase tracking-widest text-sm">Inside the Masterclass</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mt-4">
+            <span className="text-accent font-bold uppercase tracking-widest text-xs sm:text-sm">Inside the Masterclass</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mt-3 sm:mt-4">
               A Strategic Roadmap for the <br /><span className="font-serif italic font-normal">Top 1% Professional</span>
             </h2>
           </div>
-          <p className="text-body text-lg max-w-sm">
+          <p className="text-body text-base sm:text-lg max-w-sm">
             We don't do hacks. We do frameworks that have worked for over 2,500 professionals.
           </p>
         </div>

@@ -3,17 +3,17 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white border-t border-gray-100 pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-20">
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
+    <footer className="bg-white border-t border-gray-100 pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16 md:mb-20">
+          <div className="sm:col-span-2">
+            <div className="flex items-center gap-2 mb-4 sm:mb-6">
               <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">SC</span>
               </div>
-              <span className="font-bold text-xl tracking-tight text-charcoal">SAKSHI CHANDRAAKAR</span>
+              <span className="font-bold text-lg sm:text-xl tracking-tight text-charcoal">SAKSHI CHANDRAAKAR</span>
             </div>
-            <p className="text-body max-w-xs mb-8">
+            <p className="text-body text-sm sm:text-base max-w-xs mb-6 sm:mb-8">
               Helping high-performing professionals become high-value authorities using the 5 Capitals Framework.
             </p>
             <div className="flex gap-4">
@@ -48,11 +48,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-muted text-sm italic font-serif">
+        <div className="pt-8 sm:pt-10 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 text-center md:text-left">
+          <p className="text-muted text-xs sm:text-sm italic font-serif">
             Two paths lie ahead. One leads to safety. The other leads to growth.
           </p>
-          <p className="text-muted text-sm font-medium">
+          <p className="text-muted text-xs sm:text-sm font-medium">
             © 2024 Sakshi Chandraakar. All rights reserved.
           </p>
         </div>

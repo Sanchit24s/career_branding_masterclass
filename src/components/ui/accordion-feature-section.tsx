@@ -23,7 +23,7 @@ const Feature197 = ({ features }: Feature197Props) => {
   const [activeImage, setActiveImage] = useState(features[0]?.image || "");
 
   return (
-    <div className="flex w-full items-start justify-between gap-12">
+    <div className="flex flex-col md:flex-row w-full items-start justify-between gap-6 md:gap-12">
       <div className="w-full md:w-1/2">
         <Accordion
           type="single"
@@ -43,23 +43,23 @@ const Feature197 = ({ features }: Feature197Props) => {
           {features.map((tab) => (
             <AccordionItem key={tab.id} value={`item-${tab.id}`} className="border-charcoal/10">
               <AccordionTrigger
-                className="cursor-pointer py-6 !no-underline transition hover:text-accent"
+                className="cursor-pointer py-4 sm:py-5 md:py-6 !no-underline transition hover:text-accent"
               >
                 <h6
-                  className={`text-xl md:text-2xl font-bold text-left ${tab.id === activeTabId ? "text-charcoal" : "text-charcoal/70"}`}
+                  className={`text-lg sm:text-xl md:text-2xl font-bold text-left ${tab.id === activeTabId ? "text-charcoal" : "text-charcoal/70"}`}
                 >
                   {tab.title}
                 </h6>
               </AccordionTrigger>
               <AccordionContent>
-                <p className="mt-3 text-body text-lg leading-relaxed">
+                <p className="mt-3 text-body text-base sm:text-lg leading-relaxed">
                   {tab.description}
                 </p>
                 <div className="mt-6 md:hidden">
                   <img
                     src={tab.image}
                     alt={tab.title}
-                    className="h-full max-h-80 w-full rounded-[2rem] object-cover shadow-lg"
+                    className="h-full max-h-64 sm:max-h-80 w-full rounded-[1.5rem] sm:rounded-[2rem] object-cover shadow-lg"
                   />
                 </div>
               </AccordionContent>
@@ -67,11 +67,11 @@ const Feature197 = ({ features }: Feature197Props) => {
           ))}
         </Accordion>
       </div>
-      <div className="relative m-auto hidden w-1/2 overflow-hidden rounded-[2.5rem] bg-charcoal/5 md:block">
+      <div className="relative m-auto hidden w-full md:w-1/2 overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] bg-charcoal/5 md:block">
         <img
           src={activeImage}
           alt="Feature preview"
-          className="aspect-[4/3] rounded-[2rem] object-cover shadow-2xl"
+          className="aspect-[4/3] rounded-[1.5rem] sm:rounded-[2rem] object-cover shadow-2xl"
         />
       </div>
     </div>

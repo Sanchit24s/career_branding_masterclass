@@ -3,19 +3,19 @@ import React from 'react';
 
 const Transformation: React.FC = () => {
   return (
-    <section className="py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="bg-primary-gradient p-12 md:p-24 rounded-[3.5rem] relative overflow-hidden">
+    <section className="py-16 sm:py-24 md:py-32 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="bg-primary-gradient p-6 sm:p-8 md:p-12 lg:p-24 rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3.5rem] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full blur-[100px] -mr-48 -mt-48"></div>
           
           <div className="grid md:grid-cols-2 gap-16 relative z-10 items-center">
             <div className="reveal">
-              <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-8 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-6 sm:mb-8 leading-tight">
                 The Shift from <br/>
                 <span className="font-serif italic font-normal">Invisible Expert</span> <br/>
                 to <span className="text-accent underline decoration-charcoal/10">Premium Authority</span>
               </h2>
-              <p className="text-xl text-charcoal/80 mb-10 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-charcoal/80 mb-8 sm:mb-10 leading-relaxed">
                 When you understand branding, you stop asking for permission to grow. You start creating the conditions where growth is inevitable.
               </p>
               
@@ -31,7 +31,7 @@ const Transformation: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white/40 backdrop-blur-xl border border-white/40 p-10 rounded-[2.5rem] reveal shadow-2xl">
+            <div className="bg-white/40 backdrop-blur-xl border border-white/40 p-6 sm:p-8 md:p-10 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] reveal shadow-2xl">
               <div className="space-y-8">
                 <div className="pb-8 border-b border-charcoal/5">
                   <div className="text-xs font-bold text-accent uppercase tracking-tighter mb-4">Before Sakshi</div>

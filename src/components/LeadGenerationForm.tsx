@@ -142,7 +142,7 @@ const LeadGenerationForm: React.FC<LeadGenerationFormProps> = ({ isOpen, onClose
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-charcoal/80 backdrop-blur-sm"
@@ -150,23 +150,23 @@ const LeadGenerationForm: React.FC<LeadGenerationFormProps> = ({ isOpen, onClose
       />
 
       {/* Dialog */}
-      <div className="relative bg-white rounded-[3.5rem] shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col">
+      <div className="relative bg-white rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3.5rem] shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col m-4">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 w-10 h-10 rounded-full bg-charcoal/10 hover:bg-charcoal/20 flex items-center justify-center transition-all z-10"
+          className="absolute top-4 right-4 sm:top-6 sm:right-6 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-charcoal/10 hover:bg-charcoal/20 flex items-center justify-center transition-all z-10"
         >
-          <X className="w-5 h-5 text-charcoal" />
+          <X className="w-4 h-4 sm:w-5 sm:h-5 text-charcoal" />
         </button>
 
-        <div className="p-8 md:p-12 flex flex-col flex-1 overflow-y-auto">
+        <div className="p-6 sm:p-8 md:p-12 flex flex-col flex-1 overflow-y-auto">
           {/* Header */}
           <div className="text-center mb-8">
             <span className="text-accent font-bold uppercase tracking-widest text-sm">Get Your Free Assessment</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mt-4 mb-4 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mt-4 mb-4 leading-tight px-2">
               Do You Also Feel These Challenges in Your Career Growth?
             </h2>
-            <p className="text-base text-body leading-relaxed">
+            <p className="text-sm sm:text-base text-body leading-relaxed px-2">
               If you're facing these struggles, check the boxes that apply to you!
             </p>
           </div>
@@ -174,7 +174,7 @@ const LeadGenerationForm: React.FC<LeadGenerationFormProps> = ({ isOpen, onClose
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6 flex flex-col flex-1">
             {/* Personal Information */}
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="block text-xs font-bold text-charcoal mb-2 uppercase tracking-wider">
                   Your Name <span className="text-accent">*</span>
@@ -208,7 +208,7 @@ const LeadGenerationForm: React.FC<LeadGenerationFormProps> = ({ isOpen, onClose
             </div>
 
             {/* Contact and Experience */}
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="phone" className="block text-xs font-bold text-charcoal mb-2 uppercase tracking-wider">
                   Phone Number <span className="text-accent">*</span>
@@ -250,7 +250,7 @@ const LeadGenerationForm: React.FC<LeadGenerationFormProps> = ({ isOpen, onClose
               <label className="block text-xs font-bold text-charcoal mb-3 uppercase tracking-wider">
                 Select Your Challenges (Optional)
               </label>
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-64 overflow-y-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-64 overflow-y-auto">
                 {challenges.map((challenge, index) => (
                   <label
                     key={index}

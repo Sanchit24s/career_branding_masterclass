@@ -6,9 +6,9 @@ import { useFormDialog } from '../contexts/FormDialogContext';
 const CTAOffer: React.FC = () => {
   const { openDialog } = useFormDialog();
   return (
-    <section id="cta" className="py-32 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="relative bg-charcoal rounded-[3.5rem] p-8 md:p-20 text-center overflow-hidden shadow-2xl">
+    <section id="cta" className="py-16 sm:py-24 md:py-32 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="relative bg-charcoal rounded-[2rem] sm:rounded-[2.5rem] md:rounded-[3.5rem] p-6 sm:p-8 md:p-12 lg:p-20 text-center overflow-hidden shadow-2xl">
           {/* Animated Background Gradients */}
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_120%,#FF6A3D33,transparent)] opacity-50"></div>
           
@@ -17,16 +17,16 @@ const CTAOffer: React.FC = () => {
               Limited to 50 Seats
             </div>
             
-            <h2 className="text-4xl md:text-7xl font-bold text-white mb-8 leading-[1.1]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 leading-[1.1]">
               Stop Waiting. <br/>
               <span className="font-serif italic font-normal text-white/90">Start Positioning.</span>
             </h2>
             
-            <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-white/60 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
               Join the "Career Branding & 5 Capitals" Masterclass. This is the last time this session will be offered at this introductory price.
             </p>
 
-            <div className="grid sm:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
               <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
                 <Calendar className="w-6 h-6 text-accent mx-auto mb-3" />
                 <p className="text-white font-bold">Sunday, 15th Oct</p>
@@ -52,10 +52,10 @@ const CTAOffer: React.FC = () => {
 
               <button 
                 onClick={openDialog}
-                className="group relative bg-accent text-white px-12 py-6 rounded-full font-bold text-xl flex items-center justify-center gap-3 hover:bg-[#E55930] transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-accent/20"
+                className="group relative bg-accent text-white px-8 sm:px-12 py-4 sm:py-6 rounded-full font-bold text-base sm:text-lg md:text-xl flex items-center justify-center gap-2 sm:gap-3 hover:bg-[#E55930] transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-accent/20 w-full sm:w-auto"
               >
                 Secure Your Spot Now
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform" />
               </button>
               
               <p className="text-white/40 text-sm">100% Satisfaction Guarantee • No-Questions-Asked Refund</p>
