@@ -23,7 +23,7 @@ const AboutCoach: React.FC = () => {
                 I'm Sakshi Chandraakar, India's #1 Career Branding Coach And Founder Of Career Branding Hub & Happy Rich India Movement.
               </p>
               <p>
-                From Burnout To Breakthrough, I've Trained 5700+ Professionals Find Purpose, Land Dream Roles At Companies Like Facebook, Rolls Royce, And Deloitte, And Build Lives Filled With Wealth, Clarity, And Joy.
+                From Burnout To Breakthrough, I've Trained 50,000+ Professionals Find Purpose, Land Dream Roles At Companies Like Facebook, Rolls Royce, And Deloitte, And Build Lives Filled With Wealth, Clarity, And Joy.
               </p>
               <p>
                 Through The Happy Rich India Mission, I'm Reviving The Lost Spirit Of Indian Prosperity — Helping People Create Generational Wealth While Staying Rooted In Who They Truly Are.
@@ -33,15 +33,15 @@ const AboutCoach: React.FC = () => {
             {/* Statistics Grid */}
             <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-charcoal mb-2">5700+</div>
+                <div className="text-3xl sm:text-4xl font-bold text-charcoal mb-2">50,000+</div>
                 <p className="text-charcoal/60 font-medium text-xs sm:text-sm">Professionals Trained</p>
               </div>
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-charcoal mb-2">₹100Cr+</div>
-                <p className="text-charcoal/60 font-medium text-xs sm:text-sm">Cumulative Salary Hikes</p>
+                <div className="text-3xl sm:text-4xl font-bold text-charcoal mb-2">2,000+</div>
+                <p className="text-charcoal/60 font-medium text-xs sm:text-sm">Training Sessions</p>
               </div>
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-charcoal mb-2">2500+</div>
+                <div className="text-3xl sm:text-4xl font-bold text-charcoal mb-2">5,000+</div>
                 <p className="text-charcoal/60 font-medium text-xs sm:text-sm">Lives Transformed</p>
               </div>
               <div>

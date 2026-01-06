@@ -2,27 +2,33 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
+// Local images for the 5 Capitals cards
+import intellectualImage from '../assets/images/intellectual.jpg';
+import socialCapitalImage from '../assets/images/social_capital.jpg';
+import reputationalImage from '../assets/images/reputational.webp';
+import emotionalImage from '../assets/images/emotional.jpg';
+
 const Framework: React.FC = () => {
   const capitals = [
     {
       title: "Intellectual Capital",
       desc: "Moving beyond 'tasks' to 'solving problems' at scale.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop"
+      image: intellectualImage
     },
     {
       title: "Social Capital",
       desc: "Building a network that works for you while you sleep.",
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=300&fit=crop"
+      image: socialCapitalImage
     },
     {
       title: "Reputational Capital",
       desc: "How you are talked about when you aren't in the room.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+      image: reputationalImage
     },
     {
       title: "Emotional Capital",
       desc: "The resilience and confidence that allows you to negotiate.",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop"
+      image: emotionalImage
     },
     {
       title: "Economic Capital",

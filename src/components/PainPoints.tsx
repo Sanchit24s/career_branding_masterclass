@@ -1,6 +1,12 @@
 
 import React from 'react';
 import { AnimatedTestimonials } from './ui/animated-testimonials';
+import sarvagyaImage from '../assets/images/Testimonials/sarvagya.png';
+import pravinImage from '../assets/images/Testimonials/pravin.png';
+import pankajiniImage from '../assets/images/Testimonials/pankajini.png';
+import shellyImage from '../assets/images/Testimonials/shelly.png';
+import urvashiImage from '../assets/images/Testimonials/Urvashi.png';
+import nandaImage from '../assets/images/Testimonials/nanda.png';
 
 const PainPoints: React.FC = () => {
   const painSignals = [
@@ -11,32 +17,46 @@ const PainPoints: React.FC = () => {
 
   const testimonials = [
     {
-      quote: "I used to think my work would speak for itself. It did—but only to my desk. Sakshi taught me how to make it speak to the Boardroom.",
-      name: "Vikram S.",
-      designation: "VP of Operations, 14+ Yrs Exp",
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
-      result: "Result: ₹18L hike in 4 months"
+      quote: "160% hike in 1.5 months after applying the framework.",
+      name: "SARVAGYA",
+      designation: "Career Branding Success Story",
+      src: sarvagyaImage,
+      result: "Result: 160% hike in 1.5 months"
     },
     {
-      quote: "I restructured my positioning. I stopped applying for jobs and started being 'poached'. My income jumped from 32L to 52L in 6 months.",
-      name: "Nidhi S.",
-      designation: "Director of Engineering",
-      src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop",
-      result: "Result: ₹20L hike in 6 months"
+      quote: "116% hike in the same company & recruiters still chased me with multiple offers.",
+      name: "PRAVIN",
+      designation: "Career Branding Success Story",
+      src: pravinImage,
+      result: "Result: 116% hike in the same company"
     },
     {
-      quote: "The 5 Capitals Framework changed everything. I went from being invisible to being the go-to person for strategic initiatives.",
-      name: "Rajesh K.",
-      designation: "Senior VP, Technology",
-      src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1974&auto=format&fit=crop",
-      result: "Result: ₹25L hike in 8 months"
+      quote: "From low confidence to dream role + 100% hike.",
+      name: "PANKAJINI",
+      designation: "Career Branding Success Story",
+      src: pankajiniImage,
+      result: "Result: Dream role + 100% hike"
     },
     {
-      quote: "Sakshi helped me understand that my value wasn't in my skills alone—it was in how I positioned them. Game changer.",
-      name: "Priya M.",
-      designation: "VP of Product, 12+ Yrs Exp",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1974&auto=format&fit=crop",
-      result: "Result: ₹22L hike in 5 months"
+      quote: "I'm super happy to share that I've joined my dream company, American Express, as a Risk and Compliance Analyst with a 100% hike.",
+      name: "SHELLY",
+      designation: "Career Branding Success Story",
+      src: shellyImage,
+      result: "Result: Declined IBM Offer & Landed American Express with a 100% Salary Hike"
+    },
+    {
+      quote: "Following Sakshi Ma'am's guidance, I set my sights on a 100% hike and was able to stay committed to the process.",
+      name: "URVASHI",
+      designation: "Career Branding Success Story",
+      src: urvashiImage,
+      result: "Result: Achieved a 90% Salary Hike in a Product Role Transition"
+    },
+    {
+      quote: "I'm elated to share that I secured a job with a whopping 110% hike!!! My deepest gratitude to you and CBH for always supporting and encouraging.",
+      name: "NANDA",
+      designation: "Career Branding Success Story",
+      src: nandaImage,
+      result: "Result: Secured a Dream Job with a Whopping 110% Hike!!!"
     }
   ];
 
@@ -66,12 +86,12 @@ const PainPoints: React.FC = () => {
         </div>
 
         {/* Right Side - The Proof with Animated Testimonials */}
-        <div className="relative reveal">
+        <div className="relative">
           {/* Soft gradient background shape - matching Transformation section style */}
           <div className="absolute -bottom-10 -right-10 w-full h-full bg-primary-gradient rounded-[2.5rem] -z-10 rotate-3 overflow-hidden"></div>
 
           {/* Premium testimonial card - matching site's card style */}
-          <div className="bg-white p-6 sm:p-8 md:p-12 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] relative z-10 shadow-2xl">
+          <div className="bg-white p-6 sm:p-8 md:p-12 rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] relative z-10 shadow-2xl reveal">
             <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
           </div>
         </div>

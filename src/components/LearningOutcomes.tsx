@@ -6,27 +6,38 @@ const LearningOutcomes: React.FC = () => {
   const features = [
     {
       id: 1,
-      title: "The Invisibility Audit",
+      title: "Why Your Growth Has Been Slow — Even When Your Work Is Good",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
-      description: "Identify exactly why your current efforts are being ignored by leadership. Learn the hidden patterns that keep high performers invisible and discover the exact signals that make decision-makers take notice."
+      description:
+        "Uncover the real reasons your income hasn't kept pace with your effort. You'll see why working harder, adding more skills, or changing jobs hasn't created the breakthrough you're aiming for."
     },
     {
       id: 2,
-      title: "Hiring Psychology",
+      title: "The Unseen Reasons You’re Getting Passed Over For Hikes And Promotions",
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop",
-      description: "How high-ticket roles are actually filled (hint: it's not through portals). Understand the psychology behind executive hiring decisions and learn how to position yourself as the obvious choice."
+      description:
+        "Understand how managers, leadership, and recruiters actually evaluate \"promotion material\" versus \"backup support\"—and why your true potential isn't translating into money or titles yet."
     },
     {
       id: 3,
-      title: "The 5 Capitals Map",
+      title: "The Proven 5 Capitals Framework For Career Branding",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-      description: "Step-by-step framework to transition from execution to authority. Master the five critical capitals that separate top earners from the rest: Human, Social, Cultural, Symbolic, and Economic Capital."
+      description:
+        "Discover the 5 Hidden Career Capitals that separate top 10% earners from everyone else—and how to start activating them in your own career, step by step, without burning out or constantly switching companies."
     },
     {
       id: 4,
-      title: "Premium Positioning",
+      title: "Why Job Portals Often Fail You — And What Actually Gets You Shortlisted",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
-      description: "How to articulate your value so companies see you as an investment, not a cost. Transform your narrative from 'what you do' to 'what you're worth' and command the compensation you deserve."
+      description:
+        "Learn the real rules of hiring that no one explains—from how premium roles are filled to why your profile gets ignored—and what you must change so decision-makers instantly see you as a top candidate."
+    },
+    {
+      id: 5,
+      title: "The Step-By-Step 6-Stage Process To Master The 5 Capitals",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070&auto=format&fit=crop",
+      description:
+        "Walk away with a clear, practical roadmap to apply the 5 Capitals in your own career immediately after the masterclass—so you know exactly what to do next, this quarter in 2026."
     }
   ];
 
@@ -37,11 +48,11 @@ const LearningOutcomes: React.FC = () => {
           <div className="max-w-2xl">
             <span className="text-accent font-bold uppercase tracking-widest text-xs sm:text-sm">Inside the Masterclass</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mt-3 sm:mt-4">
-              A Strategic Roadmap for the <br /><span className="font-serif italic font-normal">Top 1% Professional</span>
+              What You’ll Learn In This <br /><span className="font-serif italic font-normal">99-Minute Masterclass</span>
             </h2>
           </div>
           <p className="text-body text-base sm:text-lg max-w-sm">
-            We don't do hacks. We do frameworks that have worked for over 2,500 professionals.
+            This is not another generic resume or interview tips session. You’ll get a clear, strategic system you can start using the same day.
           </p>
         </div>
 
