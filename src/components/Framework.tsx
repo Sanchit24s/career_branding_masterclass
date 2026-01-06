@@ -89,8 +89,8 @@ const Framework: React.FC = () => {
             {capitals.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 reveal group"
-                data-reveal-delay={idx * 200}
+                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-gray-100 reveal group"
+                style={{ transitionDelay: `${idx * 100}ms` }}
               >
                 <div className="flex gap-3 sm:gap-4 p-4 sm:p-5 md:p-6">
                   {/* Image */}

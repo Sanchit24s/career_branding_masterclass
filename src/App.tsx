@@ -45,19 +45,7 @@ function AppContent() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const el = entry.target;
-          const revealDelay = el.getAttribute('data-reveal-delay');
-
-          if (revealDelay) {
-            // Apply custom delay for scroll-triggered animations
-            const delay = parseInt(revealDelay);
-            setTimeout(() => {
-              el.classList.add('active');
-            }, delay);
-          } else {
-            // Immediate activation for elements without delay
-            el.classList.add('active');
-          }
+          entry.target.classList.add('active');
         }
       });
     }, observerOptions);
@@ -72,17 +60,9 @@ function AppContent() {
         if (isInViewport) {
           // Get reveal order for staggered animation (Hero section elements)
           const revealOrder = el.getAttribute('data-reveal-order');
-          const revealDelay = el.getAttribute('data-reveal-delay');
-
           if (revealOrder) {
             // Staggered fade-in: 200ms base delay + 200ms per order
             const delay = 200 + (parseInt(revealOrder) - 1) * 200;
-            setTimeout(() => {
-              el.classList.add('active');
-            }, delay);
-          } else if (revealDelay) {
-            // Custom delay for elements like Framework capitals - smooth staggered animation
-            const delay = 300 + parseInt(revealDelay);
             setTimeout(() => {
               el.classList.add('active');
             }, delay);
